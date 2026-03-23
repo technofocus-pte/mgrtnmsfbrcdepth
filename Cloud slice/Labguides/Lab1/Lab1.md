@@ -16,7 +16,7 @@ Assistant** to seamlessly migrate metadata and data into the Fabric Data
 Warehouse. You will also learn to reroute dependent analytical tools and
 processes to the migrated environment, ensuring business continuity.
 
-**Objectives**
+**Objectives** 
 
 By the end of this lab, you will be able to:
 
@@ -52,21 +52,21 @@ By the end of this lab, you will be able to:
 
 6.  **Migrate data into Fabric Data Warehouse**
 
-    - Configure and run Fabric Data Factory copy jobs
-
-    - Validate successful data movement
+	- Configure and run Fabric Data Factory copy jobs
+	
+	- Validate successful data movement
 
 7.  **Fix incompatible scripts**
 
-    - Use Migration Assistant and Copilot suggestions to correct
-      unsupported T‑SQL
+	- Use Migration Assistant and Copilot suggestions to correct
+	  unsupported T‑SQL
 
 8.  **Reroute application and reporting connections**
 
-    - Identify existing connections to Synapse
-
-    - Update Power BI, ETL, and other systems to point to Fabric
-      Warehouse
+	- Identify existing connections to Synapse
+	
+	- Update Power BI, ETL, and other systems to point to Fabric
+	  Warehouse
 
 ## Task 0: Understand the VM and the credentials
 
