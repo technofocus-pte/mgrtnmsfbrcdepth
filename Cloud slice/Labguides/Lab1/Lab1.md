@@ -20,53 +20,53 @@ processes to the migrated environment, ensuring business continuity.
 
 By the end of this lab, you will be able to:
 
-**Set up Azure Synapse Analytics resources**
+1.  **Set up Azure Synapse Analytics resources**
 
-- Create a Synapse workspace and dedicated SQL pool
+    - Create a Synapse workspace and dedicated SQL pool
 
-- Configure security and connect to storage accounts
+    - Configure security and connect to storage accounts
 
-**Load and manage data in Azure Synapse**
+2.  **Load and manage data in Azure Synapse**
 
-- Upload sample datasets into Azure Data Lake Storage Gen2
+    - Upload sample datasets into Azure Data Lake Storage Gen2
 
-- Understand primary storage paths and metadata properties
+    - Understand primary storage paths and metadata properties
 
-**Build and run data pipelines**
+3.  **Build and run data pipelines**
 
-- Create data integration pipelines using Synapse Studio
+    - Create data integration pipelines using Synapse Studio
 
-- Copy and transform data into Synapse SQL pools
+    - Copy and transform data into Synapse SQL pools
 
-**Create and configure a Microsoft Fabric workspace**
+4.  **Create and configure a Microsoft Fabric workspace**
 
-- Set up a Fabric workspace using the Fabric portal
+    - Set up a Fabric workspace using the Fabric portal
 
-- Prepare it for migration activities
+    - Prepare it for migration activities
 
-**Migrate metadata using Migration Assistant**
+5.  **Migrate metadata using Migration Assistant**
 
-- Upload and translate DACPAC metadata
+    - Upload and translate DACPAC metadata
 
-- Review automatically adjusted objects and resolve migration issues
+    - Review automatically adjusted objects and resolve migration issues
 
-**Migrate data into Fabric Data Warehouse**
+6.  **Migrate data into Fabric Data Warehouse**
 
-- Configure and run Fabric Data Factory copy jobs
+    - Configure and run Fabric Data Factory copy jobs
 
-- Validate successful data movement
+    - Validate successful data movement
 
-**Fix incompatible scripts**
+7.  **Fix incompatible scripts**
 
-- Use Migration Assistant and Copilot suggestions to correct
-  unsupported T‑SQL
+    - Use Migration Assistant and Copilot suggestions to correct
+      unsupported T‑SQL
 
-**Reroute application and reporting connections**
+8.  **Reroute application and reporting connections**
 
-- Identify existing connections to Synapse
+    - Identify existing connections to Synapse
 
-- Update Power BI, ETL, and other systems to point to Fabric
-  Warehouse
+    - Update Power BI, ETL, and other systems to point to Fabric
+      Warehouse
 
 ## Task 0: Understand the VM and the credentials
 
