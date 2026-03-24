@@ -85,7 +85,7 @@ will be using throughout the lab.
 
     - **Username** – +++@lab.CloudPortalCredential(User1).Username+++
 
-    - **Password** – +++@lab.CloudPortalCredential(User1).AccessCode+++
+    - **Password** – +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     - **Resource Group** – @lab.CloudResourceGroup(ResourceGroup1).Name
 
@@ -105,7 +105,7 @@ will be using throughout the lab.
 
 	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-	Password: +++@lab.CloudPortalCredential(User1).Password+++
+	Password: +++@lab.CloudPortalCredential(User1).AccessToken+++
 
 	![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image3.png)
 
