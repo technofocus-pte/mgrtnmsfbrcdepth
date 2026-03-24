@@ -111,7 +111,7 @@ will be using throughout the lab.
 
 	![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image4.png)
 
-2.  In the search bar enter **Synapse** and select **Azure Synapse
+2.  In the search bar enter +++Synapse+++ and select **Azure Synapse
     Analytics.** Search for **Synapse Analytics**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image5.png)
