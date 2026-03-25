@@ -135,7 +135,7 @@ will be using throughout the lab.
 
 	- **Select Data Lake Storage Gen2 account:** *Create new*
 
-  1.  **Account name**: +++synapsegen2-@lab.labinstance.ID+++
+  1.  **Account name**: +++synapsegen2@lab.labinstance.ID+++
 
   2.  Click **OK**
 
