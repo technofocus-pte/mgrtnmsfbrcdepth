@@ -85,7 +85,7 @@ will be using throughout the lab.
 
     - **Username** – +++@lab.CloudPortalCredential(User1).Username+++
 
-    - **Password** – +++@lab.CloudPortalCredential(User1).AccessToken+++
+    - **TAP** – +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     - **Resource Group** – @lab.CloudResourceGroup(ResourceGroup1).Name
 
@@ -152,15 +152,17 @@ will be using throughout the lab.
 6.  click on **Next:Security**.
 
 8.  Configure the **Security** settings by selecting **both Microsoft
-    Entra ID and SQL authentication**, then provide a valid **SQL admin
-    username**: +++sqladmin+++ and **password**: +++password321!+++ to enable secure
-    access to the Azure Synapse workspace.
+    Entra ID and SQL authentication**, then provide:
 
-9.  Click **Review + create**
+    - **SQL admin username**: +++sqladmin+++
+    
+    - **password**: +++password321!+++
+
+10.  Click **Review + create**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image11.png)
 
-10.  In the **Review + submit** tab, once the Validation is Passed, click
+11.  In the **Review + submit** tab, once the Validation is Passed, click
     on the **Create** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image12.png)
