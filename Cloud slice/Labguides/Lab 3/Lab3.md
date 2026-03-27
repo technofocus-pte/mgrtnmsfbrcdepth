@@ -231,7 +231,7 @@ Open Synapse Studio
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image30.png)
 
-12. Browse to **C:\LabFiles\LabFiles\Lab1** on your VM, then
+12. Browse to **C:\Lab Files** on your VM, then
     select **all** file except DACPAC file and click on **Open** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image31.png)
@@ -252,7 +252,7 @@ Open Synapse Studio
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image35.png)
 
-9.  Right‑click on the **Dimension_Customer.csv** and select
+9.  Right‑click on the **DimCustomer.csv** and select
     **Properties.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image36.png)
@@ -309,8 +309,8 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image43.png)
 
 3.  In the **New lakehouse** dialog box, enter
-    +++SynapseMigrationLakehouse+++ in the **Name** field, click on
-    the **Create** button and open the new lakehous
+    +++SynapseMigrationLakehouse+++ in the **Name** field and **unselect** *lakehouse schemas*, click on
+    the **Create** button and open the new lakehouse.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image44.png)
 
@@ -381,7 +381,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     in the list.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image56.png)
->
+
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image57.png)
 
 ## Task 6: Rebuild Synapse Pipelines in Microsoft Fabric
@@ -400,7 +400,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     select **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image60.png)
->
+
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image61.png)
 
 4.  On newly created pipeline, select **Copy data** dropdown and
@@ -456,7 +456,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image73.png)
 
-15. Enter the table name as +++**dim_Date+++** and click **Create**.
+15. Enter the table name as +++dim_Date+++ and click **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image74.png)
 
@@ -468,10 +468,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     run.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image76.png)
->
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image77.png)
 
-17. After the pipeline executes successfully, go to the left‑hand
+	![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image77.png)
+
+18. After the pipeline executes successfully, go to the left‑hand
     navigation menu, select your workspace named
     **FabricMigrationLabXXX,** and then click on **Lakehouse**.
 
