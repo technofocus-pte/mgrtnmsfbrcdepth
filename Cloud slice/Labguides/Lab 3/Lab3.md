@@ -49,7 +49,7 @@ will be using throughout the lab.
 
     - **Username** – +++@lab.CloudPortalCredential(User1).Username+++
 
-    - **Password** – +++@lab.CloudPortalCredential(User1).AccessToken+++
+    - **TAP** – +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     - **Resource Group** – @Lab.CloudResourceGroup(ResourceGroup1).Name
 
@@ -70,7 +70,7 @@ this Resource group
 
 	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-	Password: +++@lab.CloudPortalCredential(User1).Password+++
+	TAP: +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image3.png)
 
