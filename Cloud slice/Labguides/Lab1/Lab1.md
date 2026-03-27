@@ -85,7 +85,7 @@ will be using throughout the lab.
 
     - **Username** – +++@lab.CloudPortalCredential(User1).Username+++
 
-    - **Password** – +++@lab.CloudPortalCredential(User1).AccessToken+++
+    - **TAP** – +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     - **Resource Group** – @lab.CloudResourceGroup(ResourceGroup1).Name
 
@@ -111,8 +111,8 @@ will be using throughout the lab.
 
 	![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image4.png)
 
-2.  In the search bar enter +++Synapse+++ and select **Azure Synapse
-    Analytics.** Search for +++Synapse Analytics+++.
+2.  Search for +++Synapse Analytics+++ and select **Azure Synapse
+    Analytics.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image5.png)
 
@@ -135,7 +135,7 @@ will be using throughout the lab.
 
 	- **Select Data Lake Storage Gen2 account:** *Create new*
 
-  1.  **Account name**: +++synapsegen2-@lab.labinstance.ID+++
+  1.  **Account name**: +++synapsegen2@lab.labinstance.ID+++
 
   2.  Click **OK**
 
@@ -152,15 +152,17 @@ will be using throughout the lab.
 6.  click on **Next:Security**.
 
 8.  Configure the **Security** settings by selecting **both Microsoft
-    Entra ID and SQL authentication**, then provide a valid **SQL admin
-    username**: +++sqladmin+++ and **password**: +++password321!+++ to enable secure
-    access to the Azure Synapse workspace.
+    Entra ID and SQL authentication**, then provide:
 
-9.  Click **Review + create**
+    - **SQL admin username**: +++sqladmin+++
+    
+    - **password**: +++password321!+++
+
+10.  Click **Review + create**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image11.png)
 
-10.  In the **Review + submit** tab, once the Validation is Passed, click
+11.  In the **Review + submit** tab, once the Validation is Passed, click
     on the **Create** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image12.png)
@@ -299,18 +301,14 @@ in the primary storage account you created for the workspace.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image41.png)
 
-	URL: +++https://fabricsynapsegen2.dfs.core.windows.net/synapsefile/NYCTripSmall.parquet+++
-
-	**ABFSS Path:
-	abfss://synapsefile@fabricsynapsegen2.dfs.core.windows.net/NYCTripSmall.parquet**
 
 ## Task 4: Integrate with pipelines
 
-1.  **In Synapse Studio,** click on** Integrate hub.**
+1.  In Synapse Studio, click on **Integrate hub.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image42.png)
 
-2.  Select** + Pipeline **to create a new pipeline**.**
+2.  Select **+ Pipeline** to create a new pipeline.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image43.png)
 
@@ -321,7 +319,7 @@ in the primary storage account you created for the workspace.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image45.png)
 
-4.  On the **Source** page, select **+** **New**
+4.  On the **Source** page, select **+ New**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image46.png)
 

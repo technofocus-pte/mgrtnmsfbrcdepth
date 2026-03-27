@@ -36,12 +36,12 @@ By completing this lab, you will be able to:
 
 ## Task 1: Create Azure Data Factory
 
-1.  Open a browser go to +++https://portal.azure.com+++ sign in with your cloud slice account
+1.  Open a browser go to +++portal.azure.com+++ sign in with your cloud slice account
     below.
 
 	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-	Password: +++@lab.CloudPortalCredential(User1).Password+++
+	TAP: +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     ![A screenshot of a computer Description automatically
 generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%204/media/image1.png)
@@ -51,7 +51,6 @@ generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/re
 
 2.  Open a browser go to +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.datafactory%2Fdata-factory-get-started%2Fazuredeploy.json+++
     
-
 3.  Select:
 
     - **Subscription** – @lab.CloudSubscription.Name
