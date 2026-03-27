@@ -43,13 +43,13 @@ will be using throughout the lab.
 2.  **Resources** tab has got the credentials that will be needed for
     executing the lab.
 
-    - **URL** - URL to the Azure portal
+    - **URL** – +++https://portal.azure.com+++
 
     - **Subscription** - @lab.CloudSubscription.Name
 
     - **Username** - +++@lab.CloudPortalCredential(User1).Username+++
 
-    - **Password** - +++@lab.CloudPortalCredential(User1).AccessToken+++
+    - **TAP** – +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     - **Resource Group** - @Lab.CloudResourceGroup(ResourceGroup1).Name
 
@@ -70,14 +70,14 @@ this Resource group
 
 	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-	Password: +++@lab.CloudPortalCredential(User1).Password+++
+	TAP: +++@lab.CloudPortalCredential(User1).AccessToken+++
 
     ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image3.png)
 
     ![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image4.png)
 
-2.  In the search bar enter **Synapse** and select **Azure Synapse
-    Analytics.** Search for **Synapse Analytics**.
+2.  Search for +++Synapse Analytics+++ and select **Azure Synapse
+    Analytics.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image5.png)
 
@@ -100,7 +100,7 @@ this Resource group
 
 	- **Select Data Lake Storage Gen2 account:** Create new
 
-  1.  **Account name**: +++fabricsynapsegen2@lab.LabInstance.ID+++
+  1.  **Account name**: +++synapsegen2@lab.LabInstance.ID+++
 
   2.  Click **OK**
 
@@ -204,9 +204,9 @@ Open Synapse Studio
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image24.png)
 
-2.  Under the category **Azure Data Lake Storage Gen2** you'll see an
-    item with your workspace name like **fabric-synapse@lab.LabInstance.Id ( Primary
-    -- asastorageaccount01(your storageaccount)**
+2.  Under the category **Azure Data Lake Storage Gen2** you'll see an
+    item with your workspace name like **fabric-synapse@Lab.LabInstance.ID (Primary
+    -- synapsegen2@lab.LabInstance.ID**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image25.png)
 
@@ -231,8 +231,8 @@ Open Synapse Studio
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image30.png)
 
-12. Browse to **C:\LabFiles\LabFiles\Lab1** on your VM, then
-    select **all** file except DACPAC file and click on **Open** button.
+12. Browse to **C:\Lab Files** on your VM, then
+    select **all** file except DACPAC file and click on **Open** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image31.png)
 
@@ -252,7 +252,7 @@ Open Synapse Studio
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image35.png)
 
-9.  Right‑click on the **Dimension_Customer.csv** and select
+9.  Right‑click on the **DimCustomer.csv** and select
     **Properties.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image36.png)
@@ -308,9 +308,9 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image43.png)
 
-3.  In the **New lakehouse** dialog box, enter
-    +++SynapseMigrationLakehouse+++ in the **Name** field, click on
-    the **Create** button and open the new lakehous
+3.  In the **New lakehouse** dialog box, enter
+    +++SynapseMigrationLakehouse+++ in the **Name** field and **unselect** *lakehouse schemas*, click on
+    the **Create** button and open the new lakehouse.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image44.png)
 
@@ -380,7 +380,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     in the list.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image56.png)
->
+
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image57.png)
 
 ## Task 6: Rebuild Synapse Pipelines in Microsoft Fabric
@@ -399,7 +399,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     select **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image60.png)
->
+
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image61.png)
 
 4.  On newly created pipeline, select **Copy data** dropdown and
@@ -455,7 +455,7 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image73.png)
 
-15. Enter the table name as +++**dim_Date+++** and click **Create**.
+15. Enter the table name as +++dim_Date+++ and click **Create**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image74.png)
 
@@ -467,10 +467,10 @@ incorrect.](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/r
     run.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image76.png)
->
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image77.png)
 
-17. After the pipeline executes successfully, go to the left‑hand
+	![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image77.png)
+
+18. After the pipeline executes successfully, go to the left‑hand
     navigation menu, select your workspace named
     **FabricMigrationLab@lab.LabInstance.Id,** and then click on **Lakehouse**.
 
