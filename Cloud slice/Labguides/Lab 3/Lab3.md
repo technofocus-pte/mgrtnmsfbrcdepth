@@ -43,7 +43,7 @@ will be using throughout the lab.
 2.  **Resources** tab has got the credentials that will be needed for
     executing the lab.
 
-    - **URL** – URL to the Azure portal
+    - **URL** – +++https://portal.azure.com+++
 
     - **Subscription** – @lab.CloudSubscription.Name
 
@@ -76,8 +76,8 @@ this Resource group
 
     ![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image4.png)
 
-2.  In the search bar enter **Synapse** and select **Azure Synapse
-    Analytics.** Search for **Synapse Analytics**.
+2.  Search for +++Synapse Analytics+++ and select **Azure Synapse
+    Analytics.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image5.png)
 
@@ -100,7 +100,7 @@ this Resource group
 
 	- **Select Data Lake Storage Gen2 account:** Create new
 
-  1.  **Account name**: +++fabricsynapsegen2@lab.LabInstance.ID+++
+  1.  **Account name**: +++synapsegen2@lab.LabInstance.ID+++
 
   2.  Click **OK**
 
