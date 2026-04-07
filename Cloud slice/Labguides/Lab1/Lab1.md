@@ -185,11 +185,15 @@ will be using throughout the lab.
 
 ## Task 2: Create a dedicated SQL pool
 
+>[!Alert] As you walk through the steps 1-5 below, please keep in mind this Azure resource have been **Pre-created** due to security reasons.
+>
+> Please walk through these steps with out trying to manually create the the **Dedicated SQL Pool**.
+
 2.  On the Synapse Workspace Overview page select **New Dedicated SQL Pool**.
 
 4.  Enter the following details:
 
-	- **SQL pool name:** +++sql dedicated pool+++
+	- **SQL pool name:** **sql dedicated pool**
 
 	- **Performance level:** Choose DW100c (or any required level for
 	  training)
