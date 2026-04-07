@@ -100,6 +100,10 @@ will be using throughout the lab.
 
 ## Task 1: Create a Synapse workspace in the Azure portal
 
+>[!Alert] As you walk through the steps below, please keep in mind these Azure resource have been **Pre-created** due to security reasons.
+>
+> Please walk through these steps with out trying to manually create the the **Synapse Workspace**.
+
 1.  Open a browser go to +++https://portal.azure.com+++ and sign in with
     your cloud slice account below.
 
@@ -129,13 +133,13 @@ will be using throughout the lab.
 
     3.  **Managed Resource group:**  Leave this blank.
 
-    4.  **Workspace name**: +++fabric-synapse@Lab.LabInstance.ID+++
+    4.  **Workspace name**: **fabric-synapse@Lab.LabInstance.ID**
 
     5.  **Region**: @lab.CloudResourceGroup(ResourceGroup1).Location
 
 	- **Select Data Lake Storage Gen2 account:** *Create new*
 
-  1.  **Account name**: +++synapsegen2@lab.labinstance.ID+++
+  1.  **Account name**: **synapsegen2@lab.labinstance.ID**
 
   2.  Click **OK**
 
@@ -143,7 +147,7 @@ will be using throughout the lab.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image8.png)
 
-5.  **File System Name:** *Create New*: +++synapsefile@lab.LabInstance.ID+++ and click OK. 
+5.  **File System Name:** *Create New*: **synapsefile@lab.LabInstance.ID** and click OK. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image9.png)
 
@@ -154,9 +158,9 @@ will be using throughout the lab.
 8.  Configure the **Security** settings by selecting **both Microsoft
     Entra ID and SQL authentication**, then provide:
 
-    - **SQL admin username**: +++sqladmin+++
+    - **SQL admin username**: **sqladmin**
     
-    - **password**: +++password321!+++
+    - **password**: **password321!**
 
 10.  Click **Review + create**
 
@@ -181,23 +185,9 @@ will be using throughout the lab.
 
 ## Task 2: Create a dedicated SQL pool
 
-1.  In Open Synapse Studio box, click on **Open** to launch your Azure
-    Synapse studio.
+2.  On the Synapse Workspace Overview page select **New Dedicated SQL Pool**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image16.png)
-
-	>[!Note] This launches the Synapse Studio interface.
-
-2.  In Synapse Studio, select **Manage** (left pane).
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image17.png)
-
-3.  In Synapse Studio, on the left-side pane, select **Manage** \> **SQL
-    pools** under **Analytics pools** and then click on **New.**
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image18.png)
-
-4.  **Configure SQL Pool**
+4.  Enter the following details:
 
 	- **SQL pool name:** +++sql dedicated pool+++
 
@@ -217,9 +207,13 @@ will be using throughout the lab.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image21.png)
 
-6.  Go to **Manage → SQL pools** and confirm the Dedicated SQL Pool
+6.  Select **Go to Resource**, select **open** on the **Open Synapse Studio** tile.
+
+7. Go to **Manage → SQL pools** and confirm the Dedicated SQL Pool
     shows **Online**
 
+    >[!Alert] If there is a pop-up error showing **Failed to load**, please select **ok** and move on.
+    
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image22.png)
 
 	>[!Note] A dedicated SQL pool consumes billable resources as long

@@ -65,102 +65,94 @@ this Resource group
 
 ## Task 1: Create a Synapse workspace in the Azure portal
 
+>[!Alert] As you walk through the steps below, please keep in mind these Azure resource have been **Pre-created** due to security reasons.
+>
+> Please walk through these steps with out trying to manually create the the **Synapse Workspace**.
+
 1.  Open a browser go to +++https://portal.azure.com+++ and sign in with
     your cloud slice account below.
 
 	Username: +++@lab.CloudPortalCredential(User1).Username+++
 
-	TAP: +++@lab.CloudPortalCredential(User1).AccessToken+++
+	Password: +++@lab.CloudPortalCredential(User1).AccessToken+++
 
-    ![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image3.png)
+	![A screenshot of a computer Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image3.png)
 
-    ![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image4.png)
+	![A screenshot of a login box Description automatically generated](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image4.png)
 
 2.  Search for +++Synapse Analytics+++ and select **Azure Synapse
     Analytics.**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image5.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image5.png)
 
 3.  Click **Create**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image6.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image6.png)
 
 4.  Enter below details to create resource group and then click
     on **OK**.
 
     1.  **Subscription**: @lab.CloudSubscription.Name
 
-    2.  **Resource Group**: @Lab.CloudResourceGroup(ResourceGroup1).Name
+    2.  **Resource Group**: @lab.CloudResourceGroup(ResourceGroup1).Name
 
     3.  **Managed Resource group:**  Leave this blank.
 
-    4.  **Workspace name**: +++fabric-synapse@Lab.LabInstance.ID+++
+    4.  **Workspace name**: **fabric-synapse@Lab.LabInstance.ID**
 
-    5.  **Region**: @Lab.CloudResourceGroup(ResourceGroup1).Location
+    5.  **Region**: @lab.CloudResourceGroup(ResourceGroup1).Location
 
-	- **Select Data Lake Storage Gen2 account:** Create new
+	- **Select Data Lake Storage Gen2 account:** *Create new*
 
-  1.  **Account name**: +++synapsegen2@lab.LabInstance.ID+++
+  1.  **Account name**: **synapsegen2@lab.labinstance.ID**
 
   2.  Click **OK**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image7.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image7.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image8.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image8.png)
 
-5.  Enter below details and then click on **Next:Security**.
+5.  **File System Name:** *Create New*: **synapsefile@lab.LabInstance.ID** and click OK. 
 
-	**File System Name**: Create New: +++synapsefile@Lab.Labinstance.ID+++ and click **OK**.
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image9.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image9.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image10.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image10.png)
+6.  click on **Next:Security**.
 
-6.  Configure the **Security** settings by selecting **both Microsoft
-    Entra ID and SQL authentication**, then provide a valid **SQL admin
-    username**: +++sqladmin+++ and **password**: +++password321!+++ to enable secure
-    access to the Azure Synapse workspace.
+8.  Configure the **Security** settings by selecting **both Microsoft
+    Entra ID and SQL authentication**, then provide:
 
-7.  Click **Review + create**
+    - **SQL admin username**: **sqladmin**
+    
+    - **password**: **password321!**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image11.png)
+10.  Click **Review + create**
 
-8.  In the **Review + submit** tab, once the Validation is Passed, click
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image11.png)
+
+11.  In the **Review + submit** tab, once the Validation is Passed, click
     on the **Create** button.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image12.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image12.png)
 
-9.  This deployment may take a few minutes.
+11.  This deployment may take a few minutes.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image13.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image13.png)
 
-10. Click on **Go to resource group** button.
+11. Click on **Go to resource group** button.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image14.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image14.png)
 
-11. Click on your **Synapse workspace**.
+12. Click on your **Synapse workspace**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image15.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image15.png)
 
 ## Task 2: Create a dedicated SQL pool
 
-1.  In Open Synapse Studio box, click on **Open** to launch your Azure
-    Synapse studio.
+2.  On the Synapse Workspace Overview page select **New Dedicated SQL Pool**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image16.png)
-
-	This launches the Synapse Studio interface.
-
-2.  In Synapse Studio, select **Manage** (left pane).
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image17.png)
-
-3.  In Synapse Studio, on the left-side pane, select **Manage** \> **SQL
-    pools** under **Analytics pools** and then click on **New.**
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image18.png)
-
-4.  **Configure SQL Pool**
+4.  Enter the following details:
 
 	- **SQL pool name:** +++sql dedicated pool+++
 
@@ -169,21 +161,27 @@ this Resource group
 
 	- Click **Review + Create → Create**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image19.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image19.png)
 
 5.  In the **Review + submit** tab, once the Validation is Passed, click
     on the **Create** button.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image20.png)
+	>[!Note] This will take up to 5 minutes to confirm the SQL pool shows online. 
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image21.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image20.png)
 
-6.  Go to **Manage → SQL pools** and confirm the Dedicated SQL Pool
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image21.png)
+
+6.  Select **Go to Resource**, select **open** on the **Open Synapse Studio** tile.
+
+7. Go to **Manage → SQL pools** and confirm the Dedicated SQL Pool
     shows **Online**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image22.png)
+    >[!Alert] If there is a pop-up error showing **Failed to load**, please select **ok** and move on.
+    
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image22.png)
 
-	>[!Knowledge] A dedicated SQL pool consumes billable resources as long
+	>[!Note] A dedicated SQL pool consumes billable resources as long
 	as it's active. You can pause the pool later to reduce costs. Please
 	Pause it if you not performing labs for the day or even for 30 minutes
 	to save your credits.
@@ -194,7 +192,7 @@ this Resource group
     **Dedicated SQL endpoint and Dedicated SQL pool**, and save them in
     a notepad.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab%203/media/image23.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image23.png)
 
 Task 3: Upload Sample Data into the Primary Storage Account
 
