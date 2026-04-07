@@ -1,4 +1,4 @@
-## **Lab 3- Migrating Azure Synapse Spark and Lake Database to Microsoft Fabric**
+## **Lab 03 - Migrating Azure Synapse Spark and Lake Database to Microsoft Fabric**
 
 **Introduction**
 
@@ -150,11 +150,15 @@ this Resource group
 
 ## Task 2: Create a dedicated SQL pool
 
+>[!Alert] As you walk through the steps 1-5 below, please keep in mind this Azure resource have been **Pre-created** due to security reasons.
+>
+> Please walk through these steps with out trying to manually create the the **Dedicated SQL Pool**.
+
 2.  On the Synapse Workspace Overview page select **New Dedicated SQL Pool**.
 
 4.  Enter the following details:
 
-	- **SQL pool name:** +++sql dedicated pool+++
+	- **SQL pool name:** **sql dedicated pool**
 
 	- **Performance level:** Choose DW100c (or any required level for
 	  training)
@@ -194,7 +198,7 @@ this Resource group
 
     ![](https://raw.githubusercontent.com/technofocus-pte/mgrtnmsfbrcdepth/refs/heads/main/Cloud%20slice/Labguides/Lab1/media/image23.png)
 
-Task 3: Upload Sample Data into the Primary Storage Account
+## Task 3: Upload Sample Data into the Primary Storage Account
 
 Open Synapse Studio
 
